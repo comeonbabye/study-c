@@ -1,0 +1,28 @@
+/*
+ ============================================================================
+ Name        : HelloWorld.c
+ Author      : tony
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>    //stdio 就是指 “standard input & output"（标准输入输出）
+#include <stdlib.h>
+
+/*
+ *
+ * stdlib.h里面定义了五种类型、一些宏和通用工具函数。 类型例如size_t、wchar_t、div_t、ldiv_t和lldiv_t；
+ * 宏例如EXIT_FAILURE、EXIT_SUCCESS、RAND_MAX和MB_CUR_MAX等等； 常用的函数如malloc()、calloc()、realloc()、
+ * free()、system()、atoi()、atol()、rand()、srand()、exit()等等。
+ */
+
+int main(void) {  //main函数
+
+	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+
+	printf("hello tony.");
+
+	return EXIT_SUCCESS;   //返回执行成功
+}
