@@ -183,3 +183,29 @@ Binding(CTRL+SHIFT+H,
 
 !ENTRY org.eclipse.cdt.core 1 0 2014-12-30 17:17:51.751
 !MESSAGE Indexed 'math' (1 sources, 8 headers) in 0.188 sec: 848 declarations; 1,531 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!SESSION 2014-12-30 21:46:38.041 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_04
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-12-30 21:50:43.662
+!MESSAGE Indexed 'HelloWorld' (1 sources, 11 headers) in 1.55 sec: 834 declarations; 1,345 references; 4 unresolved inclusions; 0 syntax errors; 11 unresolved names (0.50%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-12-30 21:51:59.493
+!MESSAGE Indexed 'math' (0 sources, 9 headers) in 0.07 sec: 40 declarations; 166 references; 4 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-12-30 23:30:36.089
+!MESSAGE Indexed 'file' (0 sources, 9 headers) in 0.09 sec: 40 declarations; 166 references; 4 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.dsf 0 10005 2014-12-30 23:46:56.318
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitor@18ae950): Status OK: org.eclipse.core.runtime code=0 OK null' resulted in a rejected execution exception.
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2014-12-30 23:46:56.319
+!MESSAGE OK
+
+!ENTRY org.eclipse.cdt.dsf 0 10005 2014-12-30 23:47:46.742
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitor@193302b): Status OK: org.eclipse.core.runtime code=0 OK null' resulted in a rejected execution exception.
+!SUBENTRY 1 org.eclipse.core.runtime 0 0 2014-12-30 23:47:46.742
+!MESSAGE OK
