@@ -1,0 +1,43 @@
+GCC
+Linux下使用最广泛的C/C++编译器是GCC，大多数的Linux发行版本都默认安装，不管是开发人员还是初学者，一般都将GCC作为Linux下首选的编译工具。
+保存文件后退出，打开终端并 cd 到当前目录，输入下面的命令：
+    gcc test.c -o test
+可以直接将C代码编译链接为可执行文件。
+
+
+可以看到在当前目录下多出一个文件 test，这就是可执行文件。不像Windows，Linux不以文件后缀来区分可执行文件，Linux下的可执行文件后缀理论上是可以任意更改的。
+
+当然，也可以分步编译：
+
+1) 预处理
+    gcc -E test.c -o test.i
+在当前目录下会多出一个预处理结果文件 test.i，打开 test.i 可以看到，在 test.c 的基础上把stdio.h和stdlib.h的内容插进去了。
+
+2) 编译为汇编代码
+    gcc -S test.i -o test.s
+其中-S参数是在编译完成后退出，-o为指定文件名。
+
+3) 汇编为目标文件
+    gcc -c test.s -o test.o
+.o就是目标文件。目标文件与可执行文件类似，都是机器能够识别的可执行代码，但是由于还没有链接，结构会稍有不同。
+
+3) 链接并生成可执行文件
+    gcc test.o -o test
+
+如果有多个源文件，可以这样来编译：
+    gcc -c test1.c -o test1.o
+    gcc -c test2.c -o test2.o
+    gcc test1.o test2.o -o test
+
+注意：如果不指定文件名，GCC会生成名为a.out的文件，.out文件只是为了区分编译后的文件，Linux下并没有标准的可执行文件后缀名，一般可执行文件都没有后缀名。
+
+编译后生成的test文件就是程序了，运行它：
+    ./test
+如果没有运行权限，可以使用sudo命令来增加权限（注意要在Linux的分区下）：
+    sudo cdmod test 777
+
+对于程序的检错，我们可以用-pedantic、-Wall、-Werror选项：
+
+    -pedantic选项能够帮助程序员发现一些不符合 ANSI/ISO C标准的代码（并不是全部）；
+    -Wall可以让gcc显示警告信息；
+    -Werror可以让gcc在编译中遇到错误时停止继续。

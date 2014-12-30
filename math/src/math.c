@@ -14,17 +14,37 @@
 // 函数声明
 int add();
 int max(int, int);
+void max4input();
 
 
 int main(void) {
 
-	printf("maxValue=%d", max(100,200));
-	printf("\n");
-	add();
+	//printf("maxValue=%d", max(100,200));
+	//printf("\n");
+
+	//add();
+	//printf("\n");
+
+
+	max4input();
 
 	return EXIT_SUCCESS;
 }
 
+
+void max4input() {
+
+	int a, b, n;  // 声明两个整型变量
+
+	printf("Input two integers: ");  // 以空格为分隔
+
+	// 以'|'为分隔符，将输入的两个整数分别赋值给a, b
+	scanf("%d %d", &a, &b);
+	// 以整数形式输出a、b和最大值，a, b, max(a,b)为参数列表
+	n = max(a, b);
+
+	printf("The max between %d and %d is %d.\n", a, b, n);
+}
 
 // 函数定义
 int add() {

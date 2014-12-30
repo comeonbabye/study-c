@@ -13,3 +13,143 @@ Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\HelloWorld.o" "..\\src\\HelloWorld.c" 
 gcc -o HelloWorld.exe "src\\HelloWorld.o" 
 Info: Nothing to build for HelloWorld
+17:15:48 **** Incremental Build of configuration Debug for project HelloWorld ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\HelloWorld.o" "..\\src\\HelloWorld.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\add.o" "..\\src\\add.c" 
+gcc -o HelloWorld.exe "src\\add.o" "src\\HelloWorld.o" 
+src\HelloWorld.o: In function `main':
+E:\work\workspace-git\study-c\HelloWorld\Debug/../src/HelloWorld.c:21: multiple definition of `main'
+src\add.o:E:\work\workspace-git\study-c\HelloWorld\Debug/../src/add.c:9: first defined here
+collect2.exe: error: ld returned 1 exit status
+17:16:14 **** Incremental Build of configuration Debug for project HelloWorld ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\add.o" "..\\src\\add.c" 
+gcc -o HelloWorld.exe "src\\add.o" "src\\HelloWorld.o" 
+17:16:27 **** Incremental Build of configuration Debug for project HelloWorld ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\HelloWorld.o" "..\\src\\HelloWorld.c" 
+..\src\HelloWorld.c: In function 'main':
+..\src\HelloWorld.c:27:2: warning: implicit declaration of function 'add' [-Wimplicit-function-declaration]
+  add();
+  ^
+gcc -o HelloWorld.exe "src\\add.o" "src\\HelloWorld.o" 
+17:18:25 **** Incremental Build of configuration Debug for project HelloWorld ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\HelloWorld.o" "..\\src\\HelloWorld.c" 
+gcc -o HelloWorld.exe "src\\HelloWorld.o" "src\\add.o" 
+17:18:26 **** Rebuild of configuration Debug for project math ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\math.o" "..\\src\\math.c" 
+gcc -o math.exe "src\\math.o" 
+Info: Nothing to build for math
+Info: Nothing to build for HelloWorld
+17:20:41 **** Incremental Build of configuration Debug for project math ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\math.o" "..\\src\\math.c" 
+..\src\math.c: In function 'main':
+..\src\math.c:18:2: warning: implicit declaration of function 'add' [-Wimplicit-function-declaration]
+  add();
+  ^
+gcc -o math.exe "src\\math.o" 
+Info: Nothing to build for HelloWorld
+17:21:37 **** Incremental Build of configuration Debug for project math ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\math.o" "..\\src\\math.c" 
+gcc -o math.exe "src\\math.o" 
+Info: Nothing to build for math
+Info: Nothing to build for HelloWorld
+17:22:10 **** Incremental Build of configuration Debug for project math ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\math.o" "..\\src\\math.c" 
+..\src\math.c: In function 'main':
+..\src\math.c:21:15: error: called object 'max' is not a function or function pointer
+  int max = max(100,200);
+               ^
+..\src\math.c:21:6: note: declared here
+  int max = max(100,200);
+      ^
+..\src\math.c:22:2: warning: spurious trailing '%' in format [-Wformat=]
+  printf("d%", max);
+  ^
+..\src\math.c:22:2: warning: too many arguments for format [-Wformat-extra-args]
+Info: Nothing to build for HelloWorld
+17:22:27 **** Incremental Build of configuration Debug for project math ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\math.o" "..\\src\\math.c" 
+..\src\math.c: In function 'main':
+..\src\math.c:22:2: warning: spurious trailing '%' in format [-Wformat=]
+  printf("d%", maxValue);
+  ^
+..\src\math.c:22:2: warning: too many arguments for format [-Wformat-extra-args]
+gcc -o math.exe "src\\math.o" 
+Info: Nothing to build for HelloWorld
+17:31:32 **** Incremental Build of configuration Debug for project math ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\math.o" "..\\src\\math.c" 
+..\src\math.c: In function 'main':
+..\src\math.c:21:2: warning: spurious trailing '%' in format [-Wformat=]
+  printf("d%", max(100,200));
+  ^
+..\src\math.c:21:2: warning: too many arguments for format [-Wformat-extra-args]
+gcc -o math.exe "src\\math.o" 
+Info: Nothing to build for math
+Info: Nothing to build for HelloWorld
+17:31:45 **** Incremental Build of configuration Debug for project math ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\math.o" "..\\src\\math.c" 
+gcc -o math.exe "src\\math.o" 
+Info: Nothing to build for math
+Info: Nothing to build for HelloWorld
+17:32:12 **** Incremental Build of configuration Debug for project math ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\math.o" "..\\src\\math.c" 
+gcc -o math.exe "src\\math.o" 
+Info: Nothing to build for math
+Info: Nothing to build for HelloWorld
+17:32:34 **** Incremental Build of configuration Debug for project math ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\math.o" "..\\src\\math.c" 
+gcc -o math.exe "src\\math.o" 
+Info: Nothing to build for math
+Info: Nothing to build for HelloWorld
+18:00:20 **** Incremental Build of configuration Debug for project math ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\math.o" "..\\src\\math.c" 
+..\src\math.c: In function 'main':
+..\src\math.c:28:2: warning: implicit declaration of function 'max4input' [-Wimplicit-function-declaration]
+  max4input();
+  ^
+..\src\math.c: At top level:
+..\src\math.c:37:6: warning: conflicting types for 'max4input' [enabled by default]
+ void max4input() {
+      ^
+..\src\math.c:28:2: note: previous implicit declaration of 'max4input' was here
+  max4input();
+  ^
+gcc -o math.exe "src\\math.o" 
+Info: Nothing to build for HelloWorld
+18:00:31 **** Incremental Build of configuration Debug for project math ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\math.o" "..\\src\\math.c" 
+gcc -o math.exe "src\\math.o" 
+Info: Nothing to build for math
+Info: Nothing to build for math
+Info: Nothing to build for HelloWorld
+18:01:54 **** Incremental Build of configuration Debug for project math ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\math.o" "..\\src\\math.c" 
+gcc -o math.exe "src\\math.o" 
+Info: Nothing to build for math
+Info: Nothing to build for HelloWorld
+18:02:14 **** Incremental Build of configuration Debug for project math ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\math.o" "..\\src\\math.c" 
+gcc -o math.exe "src\\math.o" 
+Info: Nothing to build for math
+Info: Nothing to build for HelloWorld
+18:02:29 **** Incremental Build of configuration Debug for project math ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\math.o" "..\\src\\math.c" 
+gcc -o math.exe "src\\math.o" 
+Info: Nothing to build for math
