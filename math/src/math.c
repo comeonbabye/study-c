@@ -11,8 +11,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define I 30;
-
 // 函数声明
 int add();
 int max(int, int);
@@ -21,20 +19,19 @@ void max4input();
 
 int main(void) {
 
-	printf("maxValue=%d", max(100, 200));
-	printf("\n");
+	//printf("maxValue=%d", max(100,200));
+	//printf("\n");
 
 	//add();
 	//printf("\n");
 
 
-	//max4input();
+	max4input();
 
 	return EXIT_SUCCESS;
 }
 
 
-// 函数定义
 void max4input() {
 
 	int a, b, n;  // 声明两个整型变量
