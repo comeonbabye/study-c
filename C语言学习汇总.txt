@@ -1,0 +1,32 @@
+﻿1. 关于typedef的用法总结
+http://www.cnblogs.com/csyisong/archive/2009/01/09/1372363.html
+2. strcpy用法和考点
+http://blog.163.com/zhang_231/blog/static/109599520076256259238/
+
+
+
+高质量程序设计指南--C/C++语言
+
+临时：
+http://blog.csdn.net/zzxian/article/details/7324177
+http://blog.csdn.net/zzxian/article/details/7324182
+http://blog.csdn.net/zzxian/article/details/7330819
+http://blog.csdn.net/zzxian/article/details/7367182
+http://blog.csdn.net/zzxian/article/details/7462373
+http://blog.csdn.net/zzxian/article/details/8615708
+http://blog.csdn.net/zzxian/article/details/8729819
+http://blog.csdn.net/zzxian/article/details/8264299
+http://blog.csdn.net/zzxian/article/details/8263091
+http://blog.csdn.net/zzxian/article/details/8264371
+http://blog.csdn.net/zzxian/article/details/8263091
+http://blog.csdn.net/zzxian/article/details/7480926
+http://blog.csdn.net/zzxian/article/details/7477079
+http://blog.csdn.net/zzxian/article/details/7430487
+http://blog.csdn.net/zzxian/article/details/7363149
+http://blog.csdn.net/zzxian/article/details/6285291
+http://blog.csdn.net/zzxian/article/details/6085087
+http://blog.csdn.net/zzxian/article/details/6088151
+http://blog.csdn.net/zzxian/article/details/6035517
+http://blog.csdn.net/zzxian/article/details/7363192
+http://blog.csdn.net/zzxian/article/details/7232742
+http://blog.csdn.net/zzxian/article/details/7163689
