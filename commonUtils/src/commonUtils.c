@@ -17,7 +17,7 @@ int main(void) {
 
 	testStrCpy();
 
-	testStrCpy2();
+	//testStrCpy2();
 
 	testStrCmp();
 

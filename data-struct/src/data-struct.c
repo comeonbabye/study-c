@@ -12,11 +12,14 @@
 #include <stdlib.h>
 
 #include "chaper_3_line_table/list.h"
+#include "chaper_3_line_table/link_list.h"
 
 int main(void) {
 	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
 
-	testList();
+	//testList();
+
+	testLinkList();
 
 	return EXIT_SUCCESS;
 }
